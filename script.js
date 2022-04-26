@@ -14,7 +14,7 @@ function renderBookList(bookList) {
       (book) => `<p class="title">${book.title}</p>
             <p>${book.author}</p>
             <button data-id=${book.id} class="remove">Remove</button>
-            <hr>`).join("");
+            <hr>`).join('');
 }
 
 function saveBookToStorage(bookList) {
