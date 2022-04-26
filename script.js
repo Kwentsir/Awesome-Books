@@ -14,7 +14,8 @@ function renderBookList(bookList) {
       (book) => `<p class="title">${book.title}</p>
             <p>${book.author}</p>
             <button data-id=${book.id} class="remove">Remove</button>
-            <hr>`).join('');
+            <hr>`
+            ).join('');
 }
 
 function saveBookToStorage(bookList) {
@@ -32,7 +33,7 @@ function getBookListFromLocalStorage() {
 renderBookList(getBookListFromLocalStorage());
 
 const addBookForm = document.querySelector('#add-book');
-addBookForm.addEventListener('submit', function (event) {
+addBookForm.addEventListener('submit', function setVal(event) {
   event.preventDefault();
   const title = event.target.querySelector('#title').value;
   const author = event.target.querySelector('#author').value;
