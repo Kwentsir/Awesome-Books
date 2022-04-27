@@ -7,17 +7,48 @@
     <title>All Awesome Books</title>
   </head>
   <body>
-    <h1>All Awesome Books</h1>
-    <section id="book-list" class="books"></section>
-    <hr />
-    <h2>Add a new Book</h2>
+    <nav class="nav-container">
+      <div class="logo">Awesome Books</div>
+      <div class="nav-link">
+        <ul class="nav-ul">
+          <li><a href="#list">List</a></li>
+          <li><a href="#add-book">Add new</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <form id="add-book">
-      <input id="title" type="text" placeholder="Title" />
-      <input id="author" type="text" placeholder="Author" />
-      <button type="submit">Add</button>
-    </form>
+    <div id="list" class="list">
+      <h1>All Awesome Books</h1>
+      <div id="book-list" class="books"></div>
+      <hr/>
+    </div>
 
+    <section class="form">
+      <h2>Add a new Book</h2>
+      <form id="add-book">
+        <input id="title" type="text" placeholder="Title" />
+        <input id="author" type="text" placeholder="Author" />
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <section id="contact" class="contact-container">
+      <h2 class="contact-headline">Contact Information</h2>
+      <p class="contact-paragraph">Do you have any questions or you just want to say "Hello"?<br>You can reach out to us!</p>
+      <ul class="contact-list">
+        <li>Our e-mail: awesome.books@gmail.com</li>
+        <li>Our Phoen number: 00-111-123456</li>
+        <li>Address: streetname 22, zip-code, city, country.</li>
+      </ul>
+    </section>
+
+    <footer id="footer" class="footer-container">
+      <div class="copyright">
+        <div class="logo">Awesome-Books</div>
+        <div class="text">2022, Awesome books all rights reserved.</div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
