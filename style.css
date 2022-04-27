@@ -29,14 +29,14 @@ body {
   background-color: #fff;
 }
 
-.book-container:nth-child(odd) {
-  background-color: #ddd;
-}
-
 .book-container {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
+}
+
+.book-container:nth-child(odd) {
+  background-color: #ddd;
 }
 
 .book-description {
