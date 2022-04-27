@@ -13,7 +13,7 @@ function renderBookList(bookList) {
     .map(
       (book) => `<div class= "book-container"><div class="book-description"><p class="title"> "${book.title}" by </p>
       <p class="author">${book.author}</p> </div>
-      <button data-id=${book.id} class="remove">Remove</button></div>`
+      <button data-id=${book.id} class="remove">Remove</button></div>`,
     )
     .join('');
 }
@@ -105,4 +105,3 @@ class AwesomeBooks {
     this.#save();
   }
 }
-
