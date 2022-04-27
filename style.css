@@ -29,7 +29,7 @@ body {
   background-color: #fff;
 }
 
-section :nth-child(odd) {
+.book-container:nth-child(odd) {
   background-color: #ddd;
 }
 
