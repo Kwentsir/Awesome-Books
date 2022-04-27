@@ -1,20 +1,14 @@
-class Book {
+class AwesomeBooks {
   constructor(title, author, id) {
     this.title = title;
     this.author = author;
     this.id = id;
     this.books = [];
   }
-}
-
-class AwesomeBooks {
-  constructor() {
-    this.books = [];
-  }
 
   addBook(title, author) {
     const id = this.books.length + 1;
-    const book = new Book(title, author, id);
+    const book = new AwesomeBooks(title, author, id);
     this.books.push(book);
     this.#save();
   }
