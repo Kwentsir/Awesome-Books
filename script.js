@@ -11,10 +11,9 @@ const bookListSection = document.querySelector("#book-list");
 function renderBookList(bookList) {
   bookListSection.innerHTML = bookList
     .map(
-      (book) => `<p class="title">${book.title}</p>
-            <p>${book.author}</p>
-            <button data-id=${book.id} class="remove">Remove</button>
-            <hr>`
+      (book) => `<div class= "book-container"><div class="book-description"><p class="title"> "${book.title}" by </p>
+      <p class="author">${book.author}</p> </div>
+      <button data-id=${book.id} class="remove">Remove</button></div>`
     )
     .join("");
 }

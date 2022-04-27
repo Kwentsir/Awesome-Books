@@ -26,6 +26,29 @@ body {
   max-width: 600px;
   margin: 20px auto;
   padding: 2px;
+  background-color: #fff;
+}
+
+section :nth-child(odd) {
+  background-color: #ddd;
+}
+
+.book-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.book-description {
+  display: inline;
+}
+
+.title {
+  display: inline-block;
+}
+
+.author {
+  display: inline-block;
 }
 
 .book {
@@ -74,5 +97,4 @@ hr {
 form button {
   align-self: flex-end;
   padding: 10px;
-  margin-right: -9px;
 }
