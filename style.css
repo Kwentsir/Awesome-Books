@@ -149,6 +149,7 @@ hr {
 /* Contact-Page */
 
 .contact-container {
+    display: none;
   margin-bottom: 10rem;
 }
 .contact-headline {
@@ -175,4 +176,23 @@ hr {
   justify-content: space-between;
   border: 2px solid black;
   padding: 0.3rem;
+}
+
+.form {
+  display: block;
+}
+
+.books-list{
+  display: block;
+}
+
+.date {
+    max-width: 80%;
+    /* margin: 20px auto; */
+    text-align: right;
+    padding-top: 3rem;
+}
+
+a:active {
+  color:cornflowerblue;
 }
