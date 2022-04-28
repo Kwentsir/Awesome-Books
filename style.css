@@ -1,4 +1,4 @@
-html {
+  html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -19,19 +19,22 @@ html {
 
 body {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Nav-bar */
 .nav-container {
   display: flex;
   position: fixed;
-  width: 40rem;
-  margin: 0.5rem auto 3rem;
+  width: 60%;
+  margin: 0 20% !important;
   top: 0;
-  left: 26.5%;
   justify-content: space-between;
   padding: 0.5rem;
   border: 2px solid black;
+  background-color: #fff;
 }
 
 .nav-ul {
