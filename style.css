@@ -1,4 +1,4 @@
-  html {
+html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -56,8 +56,8 @@ body {
   color: black;
 }
 
-.nav-ul li a:hover {
-  color: seagreen;
+.nav-ul li a:active {
+  color: cornflowerblue;
 }
 
 .list {
@@ -149,9 +149,10 @@ hr {
 /* Contact-Page */
 
 .contact-container {
-    display: none;
+  display: none;
   margin-bottom: 10rem;
 }
+
 .contact-headline {
   margin: 3rem auto;
 }
@@ -178,21 +179,14 @@ hr {
   padding: 0.3rem;
 }
 
-.form {
-  display: block;
-}
-
-.books-list{
+.books-list {
   display: block;
 }
 
 .date {
-    max-width: 80%;
-    /* margin: 20px auto; */
-    text-align: right;
-    padding-top: 3rem;
-}
+  max-width: 80%;
 
-a:active {
-  color:cornflowerblue;
+  /* margin: 20px auto; */
+  text-align: right;
+  padding-top: 3rem;
 }
